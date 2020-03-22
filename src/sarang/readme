@@ -1,0 +1,17 @@
+The script requires 'credentials.json' and 'token.pickle' files in current working directory to run. 
+To make script create these files you need to enable drive API. If the 'token.pickle' is missing 
+or you are running script first time, it will launch browser page and ask google account details, project name (Quickstart default) and scope.
+This will ensure Gdrive access to script based on scopes you provided.   
+
+Example of scopes are 
+--https://www.googleapis.com/auth/drive
+--https://www.googleapis.com/auth/drive.file
+--https://www.googleapis.com/auth/drive.readonly
+--https://www.googleapis.com/auth/drive.metadata.readonly
+ 
+
+Client Id and secret are stored in token.pickle file in project directory. 
+
+To run the script set pythonpath if not set. 
+run "python GDriveDownloader.py" (Default input file is downloading.txt where you can mention the files to be downloaded in each line)
+
